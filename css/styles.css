@@ -1,15 +1,15 @@
 :root {
-  --verde-pastel-claro: #CDE8D6;
-  --verde-pastel-medio: #A8E6CF;
-  --verde-pastel-profundo: #78C2A7;
-  --verde-bosque-pastel: #4F7D64; /* Verde oscuro resaltante */
-  --verde-pino-profundo: #2E5941; /* Verde más oscuro */
+  --verde-pastel-claro: #cde8d6;
+  --verde-pastel-medio: #a8e6cf;
+  --verde-pastel-profundo: #78c2a7;
+  --verde-bosque-pastel: #4f7d64; /* Verde oscuro resaltante */
+  --verde-pino-profundo: #2e5941; /* Verde más oscuro */
   --verde-claro: #eafaee;
 
-  --amarillo-mostaza-pastel: #E6C56E; /* Color resaltante */
-  --amarillo-miel: #FBB917;
-  --amarillo-ambar: #FFBF00;
-  --amarillo-crema: #FFFDD0;
+  --amarillo-mostaza-pastel: #e6c56e; /* Color resaltante */
+  --amarillo-miel: #fbb917;
+  --amarillo-ambar: #ffbf00;
+  --amarillo-crema: #fffdd0;
 
   /* Colores de texto */
   --texto-oscuro: #333;
@@ -17,14 +17,14 @@
 }
 
 body {
-  font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;  margin: 0;
+  font-family: "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: var(--verde-claro);
   scroll-behavior: smooth; /* Comportamiento de desplazamiento suave */
 }
-
-
 
 /* Diseño Menu Icono Hamburguesa */
 .menu-toggle {
@@ -37,11 +37,10 @@ body {
   border: none;
   cursor: pointer;
   padding: 0;
-  position: fixed;  /* Cambiado a fixed */
-  top: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde superior */
-  right: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde derecho */
-  z-index: 1000;  /* Para asegurarte de que esté por encima de otros elementos */
-  
+  position: fixed; /* Cambiado a fixed */
+  top: 20px; /* Ajusta este valor para cambiar la distancia desde el borde superior */
+  right: 20px; /* Ajusta este valor para cambiar la distancia desde el borde derecho */
+  z-index: 1000; /* Para asegurarte de que esté por encima de otros elementos */
 }
 .menu-toggle span:first-child {
   width: 35px;
@@ -72,7 +71,7 @@ body {
 .x-button {
   display: none;
   position: fixed;
-  top: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde superior */
+  top: 20px; /* Ajusta este valor para cambiar la distancia desde el borde superior */
   right: 28px;
   width: 40px;
   height: 35px;
@@ -98,7 +97,6 @@ body {
 .x-line:last-child {
   transform: rotate(-45deg);
   box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
-
 }
 
 /* ---------------------------------- */
@@ -108,7 +106,7 @@ body {
   padding: 30px;
   font-size: larger;
 }
-.logo{
+.logo {
   font-weight: 700;
   color: var(--amarillo-mostaza-pastel);
 }
@@ -123,14 +121,14 @@ body {
   align-items: center;
   gap: 5px;
   background: var(--verde-pino-profundo);
-  position: fixed;  /* Cambiado a fixed */
-  top: 80px;  /* Ajusta este valor si es necesario */
-  right: 30px;  /* Ajusta este valor si es necesario */
+  position: fixed; /* Cambiado a fixed */
+  top: 80px; /* Ajusta este valor si es necesario */
+  right: 30px; /* Ajusta este valor si es necesario */
   padding: 42px;
   border-radius: 15px;
   display: none;
-  z-index: 999;  /* Para asegurarte de que esté por encima de otros elementos */
-  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.600);
+  z-index: 999; /* Para asegurarte de que esté por encima de otros elementos */
+  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.6);
 }
 .menu a {
   color: var(--verde-pastel-claro);
@@ -141,7 +139,7 @@ body {
   font-weight: 500;
 }
 
-.menu a:hover{
+.menu a:hover {
   background: var(--verde-bosque-pastel);
   padding: 15px;
   border-radius: 6px;
@@ -200,9 +198,7 @@ body {
 
 /*---------------------------------*/
 
-
 /* Carrusel de Imagenes */
-
 
 .glide {
   padding-top: 40px;
@@ -210,14 +206,12 @@ body {
   padding-right: 8px;
   max-width: 600px;
   margin: auto;
-
 }
 .glide__slide img {
   width: 100%;
   border-radius: 6px;
   box-shadow: 0 6px 0px 0px rgba(0, 0, 0, 0.5);
 }
-
 
 .glide__slide {
   position: relative;
@@ -229,8 +223,8 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; 
-  background: rgba(0, 0, 0, 0.7); /* Gradiente de difuminado hacia arriba */ 
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7); /* Gradiente de difuminado hacia arriba */
   color: var(--texto-claro);
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -245,7 +239,6 @@ body {
 main {
   padding-top: 60px;
 }
-
 
 /*--------------------------------------*/
 
@@ -279,7 +272,6 @@ main {
   font-weight: 800;
 }
 
-
 .section-info article .info img {
   background: var(--verde-pastel-claro);
   padding: 12px;
@@ -287,7 +279,7 @@ main {
 }
 /* ---------------------------------------- */
 
-.section-mini-cards{
+.section-mini-cards {
   display: flex;
   flex-direction: column; /* Dos columnas de igual tamaño */
   gap: 20px; /* Espacio entre las tarjetas */
@@ -299,16 +291,17 @@ main {
   background: var(--verde-bosque-pastel);
   padding: 60px;
   border-radius: 8px;
-box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);}
+  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);
+}
 
-.icon-svg{
+.icon-svg {
   background: var(--verde-claro);
   padding: 28px;
   border-radius: 99px;
   box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.section-mini-cards article p{
+.section-mini-cards article p {
   color: var(--verde-pastel-claro);
 }
 
@@ -319,7 +312,6 @@ box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);}
   flex-direction: column;
   gap: 6px;
 }
-
 
 .section-cards article {
   background-color: var(--verde-bosque-pastel);
@@ -380,24 +372,23 @@ box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);}
   color: var(--verde-claro);
 }
 
-.borde-chico{
+.borde-chico {
   width: 22%; /* Grosor de la línea */
   height: 3px; /* Altura de la línea */
   background-color: var(--verde-pastel-claro); /* Color de la línea */
   border-radius: 99px;
 }
 
-.borde-grande{
+.borde-grande {
   width: 100%; /* Grosor de la línea */
   height: 1px; /* Altura de la línea */
   background-color: var(--verde-pastel-claro); /* Color de la línea */
   margin: 20px;
 }
 
-
 /*-------------------------------------------*/
 
-.section-contacto{
+.section-contacto {
   margin: 60px 10px;
 }
 
@@ -432,7 +423,8 @@ label {
   color: var(--verde-pino-profundo);
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--verde-pino-profundo);
@@ -456,8 +448,6 @@ form button:hover {
   background-color: var(--verde-pino-profundo);
 }
 
-
-
 /*-------------------------------------------*/
 footer {
   background: var(--verde-pino-profundo);
@@ -474,7 +464,7 @@ footer nav {
   text-align: center;
 }
 
-footer nav a{
+footer nav a {
   background: var(--verde-bosque-pastel);
   padding: 8px;
   text-decoration: none;
@@ -497,11 +487,121 @@ footer nav a{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--verde-bosque-pastel); /* Color del thumb (parte que se mueve) */
+  background: var(
+    --verde-bosque-pastel
+  ); /* Color del thumb (parte que se mueve) */
   border-radius: 99px; /* Bordes redondeados en el thumb */
 }
 
 /* Opcional: personalizar el thumb cuando se hace hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--verde-pastel-profundo); /* Color cuando el thumb es hover */
+}
+
+/* Media Querys*/
+
+@media (min-width: 768px) {
+  body {
+    font-size: 28px;
+  }
+
+  .glide {
+    max-width: 750px;
+  }
+
+  .section-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-cards article {
+    margin: 8px;
+  }
+
+  .section-cards article h3,
+  .section-cards article p {
+    font-size: 24px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 34px;
+  }
+
+  .glide {
+    max-width: 980px;
+  }
+
+  .section-mini-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .icon-svg {
+    padding: 48px;
+    width: 130px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    position: static;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .menu a {
+    border-bottom: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .glide {
+    width: 94%;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info img {
+    padding: 46px;
+  }
+
+  footer {
+    background: none;
+  }
+
+  .section-cards article {
+    margin: 18px;
+  }
 }
