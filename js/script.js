@@ -22,3 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
         hoverpause: true
     }).mount();
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+
+        // Evita ejecutar para href="#" que no apunta a nada
+        if (targetId === "#") return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
