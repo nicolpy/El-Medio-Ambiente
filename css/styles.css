@@ -4,7 +4,8 @@
   --verde-pastel-profundo: #78C2A7;
   --verde-bosque-pastel: #4F7D64; /* Verde oscuro resaltante */
   --verde-pino-profundo: #2E5941; /* Verde más oscuro */
-  
+  --verde-claro: #eafaee;
+
   --amarillo-mostaza-pastel: #E6C56E; /* Color resaltante */
   --amarillo-miel: #FBB917;
   --amarillo-ambar: #FFBF00;
@@ -19,7 +20,7 @@ body {
   font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: var(--verde-bosque-pastel);
+  background: var(--verde-claro);
 }
 
 
@@ -39,6 +40,7 @@ body {
   top: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde superior */
   right: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde derecho */
   z-index: 1000;  /* Para asegurarte de que esté por encima de otros elementos */
+  
 }
 .menu-toggle span:first-child {
   width: 35px;
@@ -46,6 +48,7 @@ body {
   background-color: #333;
   border-radius: 2px;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .menu-toggle span {
   width: 25px;
@@ -53,6 +56,7 @@ body {
   background-color: #333;
   border-radius: 2px;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .menu-toggle span:last-child {
   width: 15px;
@@ -60,6 +64,7 @@ body {
   background-color: #333;
   border-radius: 2px;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Diseño de cerrar Menu Hamburgesa */
@@ -86,10 +91,13 @@ body {
 
 .x-line:first-child {
   transform: rotate(45deg);
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .x-line:last-child {
   transform: rotate(-45deg);
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 /* ---------------------------------- */
@@ -121,6 +129,7 @@ body {
   border-radius: 15px;
   display: none;
   z-index: 999;  /* Para asegurarte de que esté por encima de otros elementos */
+  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.600);
 }
 .menu a {
   color: var(--verde-pastel-claro);
@@ -146,21 +155,86 @@ body {
 
 /*--------------------------------*/
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--verde-bosque-pastel);
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.search-input {
+  padding: 10px 18px;
+  border: 2px solid var(--verde-pino-profundo);
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: var(--verde-pastel-profundo);
+}
+
+.search-button {
+  background-color: var(--amarillo-ambar);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: var(--verde-pino-profundo);
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+/*---------------------------------*/
+
 
 /* Carrusel de Imagenes */
 
 
 .glide {
   padding-top: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 8px;
+  padding-right: 8px;
   max-width: 600px;
   margin: auto;
 
 }
 .glide__slide img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 6px;
+  box-shadow: 0 6px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.glide__slide {
+  position: relative;
+}
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background: rgba(0, 0, 0, 0.7); /* Gradiente de difuminado hacia arriba */ 
+  color: var(--texto-claro);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 /* ------------------------------------ */
@@ -221,16 +295,20 @@ main {
 
 .section-mini-cards article {
   text-align: center;
-  background: var(--verde-pastel-claro);
+  background: var(--verde-bosque-pastel);
   padding: 60px;
   border-radius: 8px;
-}
+box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);}
 
 .section-mini-cards article img{
-  background: var(--verde-bosque-pastel);
+  background: var(--verde-claro);
   padding: 28px;
   border-radius: 99px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section-mini-cards article p{
+  color: var(--verde-pastel-claro);
 }
 
 /* ---------------------------------------- */
@@ -243,11 +321,11 @@ main {
 
 
 .section-cards article {
-  background-color: var(--verde-pastel-claro);
+  background-color: var(--verde-bosque-pastel);
   border-radius: 8px;
   padding: 30px;
   margin: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -260,22 +338,22 @@ main {
 .section-cards article h3 {
   margin-top: 15px;
   font-size: 24px;
-  color: var(--verde-pino-profundo);
+  color: var(--verde-claro);
 }
 
 .section-cards article p {
   font-size: 16px;
-  color: var(--verde-bosque-pastel);
+  color: var(--verde-claro);
 }
 
 .section-cards article a {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 80px;
-  background-color: var(--verde-pino-profundo);
-  color: var(--verde-bosque-pastel);
+  padding: 10px 60px;
+  background-color: var(--amarillo-ambar);
+  color: var(--texto-claro);
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .section-cards article a:hover {
@@ -285,6 +363,20 @@ main {
 /* ---------------------------------------- */
 
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--verde-pino-profundo);
+  padding: 20px;
+}
 
-
-
+footer nav a{
+  background: var(--verde-bosque-pastel);
+  padding: 8px;
+  text-decoration: none;
+  color: var(--verde-pastel-claro);
+  border-radius: 4px;
+  font-weight: 600;
+}
