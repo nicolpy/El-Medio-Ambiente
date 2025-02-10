@@ -482,3 +482,26 @@ footer nav a{
   border-radius: 4px;
   font-weight: 600;
 }
+
+/* Scrooll Configuración */
+
+/* Personalización del scroll */
+::-webkit-scrollbar {
+  width: 14px; /* Ancho del scroll */
+  height: 14px; /* Altura del scroll (en caso de scroll horizontal) */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--verde-pastel-claro); /* Color del fondo del track */
+  border-radius: 10px; /* Bordes redondeados en el track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--verde-bosque-pastel); /* Color del thumb (parte que se mueve) */
+  border-radius: 99px; /* Bordes redondeados en el thumb */
+}
+
+/* Opcional: personalizar el thumb cuando se hace hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--verde-pastel-profundo); /* Color cuando el thumb es hover */
+}
