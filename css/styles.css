@@ -1,0 +1,290 @@
+:root {
+  --verde-pastel-claro: #CDE8D6;
+  --verde-pastel-medio: #A8E6CF;
+  --verde-pastel-profundo: #78C2A7;
+  --verde-bosque-pastel: #4F7D64; /* Verde oscuro resaltante */
+  --verde-pino-profundo: #2E5941; /* Verde más oscuro */
+  
+  --amarillo-mostaza-pastel: #E6C56E; /* Color resaltante */
+  --amarillo-miel: #FBB917;
+  --amarillo-ambar: #FFBF00;
+  --amarillo-crema: #FFFDD0;
+
+  /* Colores de texto */
+  --texto-oscuro: #333;
+  --texto-claro: #fff;
+}
+
+body {
+  font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--verde-bosque-pastel);
+}
+
+
+
+/* Diseño Menu Icono Hamburguesa */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: fixed;  /* Cambiado a fixed */
+  top: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde superior */
+  right: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde derecho */
+  z-index: 1000;  /* Para asegurarte de que esté por encima de otros elementos */
+}
+.menu-toggle span:first-child {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.menu-toggle span {
+  width: 25px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.menu-toggle span:last-child {
+  width: 15px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Diseño de cerrar Menu Hamburgesa */
+.x-button {
+  display: none;
+  position: fixed;
+  top: 20px;  /* Ajusta este valor para cambiar la distancia desde el borde superior */
+  right: 28px;
+  width: 40px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1999;
+}
+
+.x-line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+.x-line:first-child {
+  transform: rotate(45deg);
+}
+
+.x-line:last-child {
+  transform: rotate(-45deg);
+}
+
+/* ---------------------------------- */
+
+.logo {
+  display: inline-block;
+  padding: 30px;
+  font-size: larger;
+}
+.logo{
+  font-weight: 700;
+  color: var(--amarillo-mostaza-pastel);
+}
+.logo span {
+  font-weight: 600;
+}
+
+/* Nav Links */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: var(--verde-pino-profundo);
+  position: fixed;  /* Cambiado a fixed */
+  top: 80px;  /* Ajusta este valor si es necesario */
+  right: 30px;  /* Ajusta este valor si es necesario */
+  padding: 42px;
+  border-radius: 15px;
+  display: none;
+  z-index: 999;  /* Para asegurarte de que esté por encima de otros elementos */
+}
+.menu a {
+  color: var(--verde-pastel-claro);
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid var(--verde-pastel-claro);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.menu a:hover{
+  background: var(--verde-bosque-pastel);
+  padding: 15px;
+  border-radius: 6px;
+}
+.menu a:last-child {
+  border-bottom: none;
+}
+
+.menu.active {
+  display: flex;
+}
+
+/*--------------------------------*/
+
+
+/* Carrusel de Imagenes */
+
+
+.glide {
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 600px;
+  margin: auto;
+
+}
+.glide__slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ------------------------------------ */
+
+/* Main Contenido */
+
+main {
+  padding-top: 60px;
+}
+
+
+/*--------------------------------------*/
+
+/* Secciones*/
+
+/* ---------------------------------------- */
+
+.section-info {
+  padding: 20px;
+  margin: 20px;
+  background: var(--verde-pino-profundo);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+.section-info article {
+  padding: 20px;
+  text-align: center;
+  color: var(--verde-pastel-medio);
+}
+
+.section-info article .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.section-info article .info h2 {
+  font-weight: 800;
+}
+
+
+.section-info article .info img {
+  background: var(--verde-pastel-claro);
+  padding: 12px;
+  border-radius: 99px;
+}
+/* ---------------------------------------- */
+
+.section-mini-cards{
+  display: flex;
+  flex-direction: column; /* Dos columnas de igual tamaño */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 40px;
+}
+
+.section-mini-cards article {
+  text-align: center;
+  background: var(--verde-pastel-claro);
+  padding: 60px;
+  border-radius: 8px;
+}
+
+.section-mini-cards article img{
+  background: var(--verde-bosque-pastel);
+  padding: 28px;
+  border-radius: 99px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------- */
+
+.section-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.section-cards article {
+  background-color: var(--verde-pastel-claro);
+  border-radius: 8px;
+  padding: 30px;
+  margin: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section-cards article img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.section-cards article h3 {
+  margin-top: 15px;
+  font-size: 24px;
+  color: var(--verde-pino-profundo);
+}
+
+.section-cards article p {
+  font-size: 16px;
+  color: var(--verde-bosque-pastel);
+}
+
+.section-cards article a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 80px;
+  background-color: var(--verde-pino-profundo);
+  color: var(--verde-bosque-pastel);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.section-cards article a:hover {
+  background-color: var(--verde-pastel-medio);
+}
+
+/* ---------------------------------------- */
+
+
+
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medio Ambiente</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><span>VT</span>mon</div>
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact </a>
+      </nav>
+
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <button class="x-button" onclick="toggleMenu()">
+          <div class="x-line"></div>
+          <div class="x-line"></div>
+      </button>
+    </header>
+    
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+              <li class="glide__slide"><img src="img/arbol-5.webp" alt="Imagen 1"></li>
+              <li class="glide__slide"><img src="img/arbol-6.webp" alt="Imagen 2"></li>
+              <li class="glide__slide"><img src="img/arbol-8.webp" alt="Imagen 3"></li>
+          </ul>
+      </div>
+  
+      <!-- Controles 
+      <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">◀</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">▶</button>
+      </div> -->
+    </div>
+
+
+    <main>
+      
+      <section class="section-info">
+        <article>
+          <div class="info">            
+            <div class="info">
+              <img src="img/lightbulb-fill.svg" alt="Imagen de una lámpara" class="svg-color" id="svg-img">
+              <h2>¿Sabías que...?</h2>
+            </div>
+          </div>
+          <p>
+            Los árboles no solo producen oxígeno, sino que también actúan como filtros naturales? 
+            Un solo árbol puede absorber hasta 22 kg de dióxido de carbono al año, lo que ayuda a limpiar el aire 
+            que respiramos.
+          </p>
+        </article>
+      </section>
+      
+      <section class="section-mini-cards">
+        <article>
+          <img src="img/flower3.svg" alt="">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quos consectetur corporis.</p>
+        </article>
+        <article>
+          <img src="img/hearts.svg" alt="">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quos consectetur corporis.</p>
+        </article>
+        <article>
+          <img src="img/signpost-split-fill.svg" alt="">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quos consectetur corporis.</p>
+        </article>
+        <article>
+          <img src="img/tree-fill.svg" alt="">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quos consectetur corporis.</p>
+        </article>
+      </section>
+      
+      <section class="section-cards">
+        <article>
+          <img src="img/arbol-9.webp" alt="">
+          <h3>Hola</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi similique tenetur dolorum quas?</p>
+          <a href="#">Leer más</a>
+        </article>
+        <article>
+          <img src="img/arbol-2.webp" alt="">
+          <h3>Hola</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi similique tenetur dolorum quas?</p>
+          <a href="#">Leer más</a>
+        </article>
+        <article>
+          <img src="img/arbol-3.webp" alt="">
+          <h3>Hola</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi similique tenetur dolorum quas?</p>
+          <a href="#">Leer más</a>
+        </article>
+        <article>
+          <img src="img/arbol-4.webp" alt="">
+          <h3>Hola</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi similique tenetur dolorum quas?</p>
+          <a href="#">Leer más</a>
+        </article>
+      </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+    <!-- Incluir Glide.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js" defer></script>
+  </body>
+</html>
